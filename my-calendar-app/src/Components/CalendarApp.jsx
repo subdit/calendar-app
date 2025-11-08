@@ -2,9 +2,9 @@ const CalendarApp = () => {
   return (
     <div className='calendar-app'>
       <div className='calendar'>
-        <h1 className='header'>Calendar for All</h1>
+        <h1 className='header'>My Calendar</h1>
         <div className='navigate-date'>
-          <h2 className='moth'>November,</h2>
+          <h2 className='month'>November,</h2>
           <h2 className='year'>2025</h2>
           <div className='buttons'>
             <i className='bx bx-chevron-left'></i>
@@ -20,7 +20,7 @@ const CalendarApp = () => {
           <span>Fri</span>
           <span>Sat</span>
         </div>
-        <div className='days'>
+        <div className='dates'>
           <span>1</span>
           <span>2</span>
           <span>3</span>
@@ -53,32 +53,32 @@ const CalendarApp = () => {
           <span>30</span>
           <span>31</span>
         </div>
-        <div className='events'>
-          <div className='event-popup'>
-            <div className='time-input'>
-              <div className='event-popup-time'>Time</div>
-              <input
-                type='number'
-                name='hours'
-                min={0}
-                max='24'
-                className='hours'
-              />
-              <input
-                type='number'
-                name='minutes'
-                min={0}
-                max='60'
-                className='minutes'
-              />
-            </div>
+      </div>
+      <div className='events'>
+        <div className='event-popup'>
+          <div className='time-input'>
+            <div className='event-popup-time'>Time</div>
+            <input
+              type='number'
+              name='hours'
+              min={0}
+              max='24'
+              className='hours'
+            />
+            <input
+              type='number'
+              name='minutes'
+              min={0}
+              max='60'
+              className='minutes'
+            />
           </div>
-          <textarea placeholder='Enter Event Text (Maximum 80 characters'></textarea>
-          <button className='evnet-popup-btn'>Add Event</button>
-          <button className='close-event-popup'>
-            <i className='bx bx-x'></i>
-          </button>
         </div>
+        <textarea placeholder='Enter event text: Maximum 80 characters'></textarea>
+        <button className='evnet-popup-btn'>Add Event</button>
+        <button className='close-event-popup'>
+          <i className='bx bx-x'></i>
+        </button>
         <div className='event'>
           <div className='event-date-wrapper'>
             <div className='event-date'>Nov 8, 2025</div>
